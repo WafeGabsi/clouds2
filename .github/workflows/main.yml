@@ -28,6 +28,7 @@ jobs:
           context: .
           file: Dockerfile
           load: true
+          push: true
           tags: ${{ secrets.DOCKER_HUB_USERNAME }}
           cache-from: type=gha
           cache-to: type=gha,mode=max
